@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8pWo/f+ZK31rlTAGxy/P+6FLr+tYDhcHlFcj7cZBnQDhqeDOc/1woT+fUC42oMtW+D0hDc1z/30bJA3wdRkKlQ==",
+  "dgSpecHash": "OGBS/Erk3h+pvzeEPcZpvpb1KhGzy46F+GQhpd+sZlRidZUlHfmGN/UO5iT+xWJ4Wh90y+1j2nX/knq95OMSvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\Dropbox\\Projects\\chris_squared\\weather\\WeatherApp\\weather\\weather.csproj",
+  "projectFilePath": "C:\\Users\\chris\\OneDrive\\Documents\\GitHub\\WeatherApp\\weather\\weather.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\avalonia\\0.9.12\\avalonia.0.9.12.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\avalonia.desktop\\0.9.12\\avalonia.desktop.0.9.12.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chris\\Dropbox\\Projects\\chris_squared\\weather\\WeatherApp\\weather\\weather.csproj": {}
+    "C:\\Users\\chris\\OneDrive\\Documents\\GitHub\\WeatherApp\\weather\\weather.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chris\\Dropbox\\Projects\\chris_squared\\weather\\WeatherApp\\weather\\weather.csproj": {
+    "C:\\Users\\chris\\OneDrive\\Documents\\GitHub\\WeatherApp\\weather\\weather.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chris\\Dropbox\\Projects\\chris_squared\\weather\\WeatherApp\\weather\\weather.csproj",
+        "projectUniqueName": "C:\\Users\\chris\\OneDrive\\Documents\\GitHub\\WeatherApp\\weather\\weather.csproj",
         "projectName": "weather",
-        "projectPath": "C:\\Users\\chris\\Dropbox\\Projects\\chris_squared\\weather\\WeatherApp\\weather\\weather.csproj",
+        "projectPath": "C:\\Users\\chris\\OneDrive\\Documents\\GitHub\\WeatherApp\\weather\\weather.csproj",
         "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chris\\Dropbox\\Projects\\chris_squared\\weather\\WeatherApp\\weather\\obj\\",
+        "outputPath": "C:\\Users\\chris\\OneDrive\\Documents\\GitHub\\WeatherApp\\weather\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -16,7 +16,6 @@ namespace weather.Models
 
         public forecast()
         {
-            Services.weatherAPI.getForecast();
         }
 
     }

@@ -6,6 +6,7 @@ namespace weather.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
+        
     }
 
 

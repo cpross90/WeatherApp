@@ -6,11 +6,9 @@ namespace weather.ViewModels
 {
     class forecastViewModel
     {
-        public Models.forecast forecast;
+        private const uint NUM_DAYS_IN_WEEK = 7;
 
-        public forecastViewModel()
-        {
-            forecast = new Models.forecast();
-        }
+        private Services.weatherAPI API;
+        private Models.forecast[] sevenDay = new Models.forecast[NUM_DAYS_IN_WEEK];
     }
 }

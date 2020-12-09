@@ -2,40 +2,44 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Net.Http;
-using System.Environment;
 
 namespace weather.Services
 {
+    enum apiOptions
+    {
+        LAT = 0,
+        LONG,
+        TIME
+    }
+
     class weatherAPI
     {
-        const String API_URL = "dark-sky.p.rapidapi.com";
-        const String API_KEY = "WEATHER_API";
+        private const String API_URL = "https://dark-sky.p.rapidapi.com";
+        private const String API_VAR = "WEATHER_API";
         private String apiKey;
 
         weatherAPI()
         {
-            apiKey = System.Environment.GetEnvironmentVariable(API_VARIABLE);
+            apiKey = System.Environment.GetEnvironmentVariable(API_VAR);
         }
 
-        async public void getForecast(Models.forecast obj)
+        async public void getForecast(Models.forecast obj, String[] options)
         {
             var client = new HttpClient();
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri("https://dark-sky.p.rapidapi.com/47.6727,-122.1873,2019-02-20T12:30:15"),
+                RequestUri = new Uri(API_URL + options[apiOptions.LAT] + ',' + options[apiOptions.LONG] + ',' + options[apiOptions.TIME]),
                 Headers =
             {
-                { "x-rapidapi-key", API_KEY },
+                { "x-rapidapi-key", apiKey },
                 { "x-rapidapi-host", API_URL },
             },
             };
-            using (var response = await client.SendAsync(request))
-            {
-                response.EnsureSuccessStatusCode();
-                var body = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(body);
-            }
+            using var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            var body = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(body);
         }
     }
 }
