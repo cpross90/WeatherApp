@@ -13,8 +13,8 @@ namespace weather
         {
             InitializeComponent();
             Debug.WriteLine("Test");
-            var api = new weatherAPI();
-            api.getForecast();
+            var api = new WeatherAPI();
+            api.GetForecast();
 
 #if DEBUG
             this.AttachDevTools();
