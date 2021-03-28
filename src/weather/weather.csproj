@@ -3,10 +3,16 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <AssemblyName>Weather</AssemblyName>
+    <RootNamespace>Weather</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.0" />
     <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
     <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
    </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
 </Project>

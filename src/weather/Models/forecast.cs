@@ -1,4 +1,4 @@
-namespace weather.Models
+namespace Weather.Models
 {
     class forecast
     {
