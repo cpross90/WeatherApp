@@ -1,9 +1,8 @@
-using System.Diagnostics;
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-using weather.Services;
+using Weather.Services;
 
 namespace weather
 {
@@ -12,9 +11,6 @@ namespace weather
         public MainWindow()
         {
             InitializeComponent();
-            Debug.WriteLine("Test");
-            var api = new WeatherAPI();
-            api.GetForecast();
 
 #if DEBUG
             this.AttachDevTools();

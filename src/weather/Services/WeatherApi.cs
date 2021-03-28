@@ -1,22 +1,21 @@
 using System;
 using System.Net.Http;
 
-namespace weather.Services
+namespace Weather.Services
 {
-    class WeatherAPI
+    class WeatherApi
     {
         private const string API_URL = "https://dark-sky.p.rapidapi.com";
-        private const string API_VAR = "API_KEY";
         private string? _apiKey;
 
-        public WeatherAPI()
+        public WeatherApi(string? apiKey)
         {
-            _apiKey = Environment.GetEnvironmentVariable(API_VAR);
-
-            if (String.IsNullOrEmpty(_apiKey))
+            if (String.IsNullOrEmpty(apiKey))
             {
                 throw new NullReferenceException("Error: Missing enviroment variable 'API_KEY'");
             }
+
+            _apiKey = apiKey;
         }
 
         async public void GetForecast()
